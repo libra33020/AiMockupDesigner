@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Pattern Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Design Pattern Generator</h1>
+    <div>
+        <label for="pattern-type">Pattern Type:</label>
+        <select id="pattern-type">
+            <option value="circles">Circles</option>
+            <option value="squares">Squares</option>
+            <option value="floral">Floral</option>
+            <option value="abstract">Abstract</option>
+        </select>
+    </div>
+    <button id="generate-btn">Generate New Design</button>
+    <button id="download-btn">Download SVG</button>
+    <div id="svg-container"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
